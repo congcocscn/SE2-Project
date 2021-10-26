@@ -1,0 +1,287 @@
+label{
+    color: #817b88;
+    font-size: 13px;
+  }
+  .box input[type="checkbox"] {
+    background:#350b5f;
+    visibility: hidden;
+   }
+   .box input[type="checkbox"] + label:before {
+  border: 1px solid #333;
+  content: "\00a0";
+  display: inline-block;
+  font: 16px/1em sans-serif;
+  height: 16px;
+  margin: 0 .25em 0 0;
+  padding: 0;
+  vertical-align: top;
+  width: 16px;
+}
+.box input[type="checkbox"]:checked + label:before {
+  background: rgb(31, 127, 192);
+  color: white;
+  content: "\2713";
+  text-align: center;
+}
+.box input[type="checkbox"]:checked + label:after {
+  font-weight: bold;
+}
+
+.box input[type="checkbox"]:focus + label::before {
+    outline: rgb(59, 153, 252) auto 5px;
+}
+  .resultSearch{
+   
+    background-color: #210340;
+    color:white;
+  }
+  .container1{
+    max-width: 1224px;
+    margin: 0 auto;
+  }
+  .resultSearch--formview{
+    background-color: #210340;
+  }
+  .resultSearch--formview--select{
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  .formview--select--roundtrip{
+    margin-right: 1rem;
+  }
+  .formview--select--person{
+    margin-right: 1rem;
+  }
+  .search--group{
+    display: flex;
+    width: 100%;
+  }
+  .search--group--from{
+    padding-right: 2rem;
+    width: 24%;
+  }
+  .inputhidden{
+    display:none;
+  }
+  
+  .search--group--to{
+    padding-right: 2rem;
+    width: 24%;
+  }
+  .search--group--Datefrom{
+    padding-right: 2rem;
+    width: 24%;
+  }
+  .search--group--Dateto{
+    padding-right: 2rem;
+    width: 24%;
+  }
+  .search--group--btn button{
+    background: #f7498e;
+  }
+  .search--group--btn button:hover{
+    background: #d44f84;
+  }
+  .glyphicon{
+    color:white
+  }
+  .btn-outline-secondary{
+    color: black;
+    background-color: white;
+  }
+  .custombutton{
+    border: none;
+    background: none;
+    color:white
+  }
+  .custombutton:visited,:hover,:focus{
+    border: none;
+  }
+
+  /**
+  main
+  */
+  .main{
+    color: white;
+    background:#350b5f;
+  }
+  .main--content{
+    max-width: 1224px;
+    margin: 0 auto;
+    
+  }
+  .main--content--box{
+    display: flex;
+  }
+  .main--content--tabbar{
+    width: 20%;
+    margin-right: 20px;
+  }
+ .main--content--info{
+    width: 60%;
+  }
+  .main--content--infor--header{
+    margin-top: 1rem;
+  }
+  .tab-custom{
+    background: #7f236a;
+    /* padding: 20px 30px; */
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(78, 71, 71);
+  }
+  .tab-custom:hover{
+    background: #6b1a58;
+  }
+  .nav-pills{
+    border:1px solid #6b1a58;
+    border-radius: 5px;
+  
+  }
+  .tab-btn{
+    text-decoration: none;
+    padding: 20px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 300;
+  }
+  .tab-custom .active{
+    background: #de1666;
+  }
+  .tab-btn:hover{
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+  }
+
+  /** tickeet*/
+  .list--ticket{
+   width: 100%;
+  }
+  .ist--ticket--box{
+    width: 100%;
+  }
+  .ticket--box--content{
+    display: flex;
+    margin: 10px 0;
+  }
+  .ticket--box--info{
+    width: 75%;
+    background: white;
+    color: #210340;
+    padding: 20px 10px;
+  }
+  .ticket--box--deal{
+    width: 25%;
+    background: #e3e9e7;
+    color: #210340;
+    padding: 20px 10px;
+  }
+  .ticket--box--infoxrrow{
+    display: flex;
+    justify-content:flex-start;
+    margin: 10px 0;
+  }
+  .inforrow--checkbox{
+   
+    width: 10%;
+  }
+  .inforrow--brand{
+    margin-right: 10px;
+    width: 20%;
+    padding-top:5px;
+    font-size:14px;
+  }
+  .inforrow--time{
+    margin-right: 10px;
+    width: 40%;
+  }
+  .inforrow--time--wrapper--city{
+   font-size:14px;
+  }
+  .inforrow--route--wrapper--date{
+  font-size:14px;
+  }
+  
+  .inforrow--route{
+    margin-right: 10px;
+    width: 20%;
+  }
+  .inforrow--estimate{
+    margin-right: 10px;
+    width: 10%;
+  }
+/*
+tabbar
+*/
+.content-colapse-reconmend{
+  border-bottom: 1px solid white;
+}
+.btncollapse{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.btncollapse:hover{
+  text-decoration: none;
+  color: white;
+}
+.box .range::-webkit-slider-thumb{
+-webkit-appearance: none;
+background: #0752c4;
+}
+.range{
+  color: #0752c4  !important;
+  background: #0752c4 !important;
+}
+.values{
+  display: flex;
+}
+.dropdown-item-wrapper{
+	display:flex;
+	justify-content: center;
+    align-items: center;
+}
+.dropdown-item-wrapper-range{
+	margin-left:5px;
+	font-size:12px;
+	color:#b3b4b6;
+}
+
+.dropdown-item-wrapper-input{
+	margin-left:20px;
+	display:flex;
+	justify-content: center;
+    align-items: center;
+}
+.dropdown-item-wrapper-input-button{
+	margin:0 5px 0 5px;
+	outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	
+}
+.dropdown-item-wrapper-input-button:hover{
+	margin:0 5px 0 5px;
+	outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	
+}
+

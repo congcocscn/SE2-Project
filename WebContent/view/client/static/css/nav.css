@@ -1,0 +1,133 @@
+/*styling for header with navigation bar - vertical*/
+.horizontal-navigation-bar {
+    height: 62px;
+    width: 100%;
+    padding: 0 10%;
+    background: rgb(33, 6, 57);
+    display: grid;
+    grid-template-columns: 0.3fr 3fr 0.5fr;
+}
+
+/*for logo part*/
+.logo-site {
+    display: flex;
+    align-items: center;
+}
+
+/*basic style for navigation bar*/
+.navigation-bar {
+    font-size: 70%;
+    display: flex;
+    align-items: center;
+    height: 62px;
+}
+
+/*navigation bar items flight, stays, car, .... with register part*/
+.navigation-items, .register-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 62px;
+    color: white;
+}
+
+/*not apply this style for the last child*/
+.navigation-items div:not(:last-child) span {
+    display: flex;
+    align-items: center;
+}
+
+/*style for div that contain svg and span */
+.navigation-items div {
+    margin: 0 15px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/*fixed style for the first child*/
+.navigation-items div:first-child {
+    color: rgb(242, 114, 43);
+    position: relative;
+    padding: 19px 0;
+}
+
+.navigation-items div:first-child:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(45deg, rgb(245, 83, 140), rgb(247, 119, 124), rgb(249, 152, 110));
+}
+
+/*hover effects for navigation items and register-part*/
+.navigation-items div:hover,
+.register-part div:hover {
+    color: rgb(242, 114, 43);
+}
+
+.dropdown-menu-for-navigationBar {
+    position: relative;
+}
+
+.dropdown-content-forPc,
+.dropdown-content-forTablet,
+.dropdown-content-forPhones {
+    position: absolute;
+    width: 165px;
+    background: white;
+    display: none;
+    z-index: 99;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    left: -15px;
+}
+
+.dropdown-content-forPc ul li,
+.dropdown-content-forTablet ul li,
+.dropdown-content-forPhones ul li {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.dropdown-content-forPc ul li a,
+.dropdown-content-forTablet ul li a,
+.dropdown-content-forPhones ul li a {
+    color: black;
+    font-size: 80%;
+}
+.dropdown-content-forPc ul li:hover a,
+.dropdown-content-forTablet ul li:hover a,
+.dropdown-content-forPhones ul li:hover a {
+    color: rgb(242, 114, 43);
+}
+
+.dropdown-content-forPc ul li:first-child a,
+.dropdown-content-forTablet ul li:first-child a,
+.dropdown-content-forPhones ul li:first-child a {
+    color: rgb(242, 114, 43);
+}
+
+.dropdown-content-forPc ul li:last-child,
+.dropdown-content-forTablet ul li:last-child,
+.dropdown-content-forPhones ul li:last-child{
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding: 20px 10px;
+}
+
+.dropdown-menu-for-navigationBar:hover .dropdown-content-forPc {
+    display: block;
+}
+
+
+/*for register-part contain trips and sign in button */
+.trips div, .sign-in div {
+    font-size: 70%;
+    font-weight: 700;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}

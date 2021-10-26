@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./static/css/register_style.css">
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="headerMain">
+            <div class="header--container">
+                <div class="header--leftSection">
+                    <div class="menu--btnSection">
+                        <button class="menu--btn"></button>
+                    </div>
+                    <div class="logo"></div>
+                </div>
+
+                <div class="header--rightSection">
+                    <div class="trips">
+                        <a href="/TODO" class="tripsLink">trips</a> <!-- need a trips link-->
+                    </div>
+                    <div class="signIn">
+                        <a href="/TODO" class="SignIn--link">Signin</a><!-- need a Signin link-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main--container">
+            <div class="main">
+                <div class="main--form">
+                    <form class="register--form">
+                        <div class="description">
+                            <h2 class="register--form--title">
+                                register
+                            </h2>
+                            <span class="description0">Already a Registered Customer or Envity member?<a class="direct--login" href="#">Login</a></span>
+                            <div class="description1">
+                                <span>By clicking on the "Create Member Profile" button below, it is certified that
+                                    Member has read and agreed to the "Lotusmiles Terms and Conditions. Please use
+                                    English characters only. No special characters allowed."</span>
+                            </div>
+                            <div class="description2">
+                                <span>All fields marked with <span class="red">*</span> are required</span>
+                            </div>
+
+                            <div class="enrollContent">
+                                <div class="enrollSteps">
+                                    <ul class="enrollStep--link">
+                                        <li class="enrollStep1"><a class="center" href="#">Personal Information</a><i class="right1"></i></li>
+                                        <li class="enrollStep2"><a class="center" href="#">   Contact Details  </a><i class="right2"></i></li>
+                                        <li class="enrollStep3"><a class="center" href="#"> Extra Information  </a></li>
+                                    </ul>
+                                    <ul class="enroll--content--form">
+                                        <div class="enroll--form">
+                                            <li class="step--content1">
+                                                <div class="row">
+                                                    <div class="col1">
+                                                        <h2 class="step--title">Personal Information</h2>
+                                                        <span>Your personal information will be the same as in your
+                                                            passport or ID card.</span>
+                                                    </div>
+
+                                                    <div class="col2">
+                                                        <div class="group--row--col">
+                                                            <div class="row10">
+                                                                <p>
+                                                                    <span class="form--col--title">Title<span
+                                                                            class="red">*</span>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="form--col--content">
+                                                                <select name="title--seclect" id="title--seclect">
+
+                                                                    <option value="MR">MR</option>
+                                                                    <option value="MRS">MRS</option>
+                                                                    <option value="MS">MS</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="group--row--col">
+                                                            <div class="row10">
+                                                                <p>
+                                                                    <span class="form--col--title">Family Name<span
+                                                                            class="red">*</span>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="form--col--content">
+                                                                <input class="input" type="text" name="FamilyName"
+                                                                    placeholder="Enter as in passport, eg. NGUYEN">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="group--row--col">
+                                                            <div class="row10">
+                                                                <p>
+                                                                    <span class="form--col--title">Given Name<span
+                                                                            class="red">*</span>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="form--col--content">
+                                                                <input class="input" type="text" name="GivenName"
+                                                                    placeholder="Enter as in passport, eg. VAN TOAN">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="group--row--col">
+                                                            <div class="row10">
+                                                                <p>
+                                                                    <span class="form--col--title">Date of Birth<span
+                                                                            class="red">*</span>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="form--col--content">
+                                                                <select name="title--seclect--dob"
+                                                                    id="title--seclect--dob">
+
+                                                                    <option value="01">01</option>
+                                                                    <option value="02">02</option>
+                                                                    <option value="03">03</option>
+                                                                    <option value="04">04</option>
+                                                                    <option value="05">05</option>
+                                                                    <option value="06">06</option>
+                                                                    <option value="07">07</option>
+                                                                    <option value="08">08</option>
+                                                                    <option value="09">09</option>
+                                                                    <option value="10">10</option>
+                                                                    <option value="11">11</option>
+                                                                    <option value="12">12</option>
+                                                                    <option value="13">13</option>
+                                                                    <option value="14">14</option>
+                                                                    <option value="15">15</option>
+                                                                    <option value="16">16</option>
+                                                                    <option value="17">17</option>
+                                                                    <option value="18">18</option>
+                                                                    <option value="19">19</option>
+                                                                    <option value="20">20</option>
+                                                                    <option value="21">21</option>
+                                                                    <option value="22">22</option>
+                                                                    <option value="23">23</option>
+                                                                    <option value="24">24</option>
+                                                                    <option value="25">25</option>
+                                                                    <option value="26">26</option>
+                                                                    <option value="27">27</option>
+                                                                    <option value="28">28</option>
+                                                                    <option value="29">29</option>
+                                                                    <option value="30">30</option>
+                                                                    <option value="31">31</option>
+
+
+                                                                </select>
+
+                                                                <select name="title--seclect--dob"
+                                                                    id="title--seclect--dob">
+
+                                                                    <option value="January">January</option>
+                                                                    <option value="February">February</option>
+                                                                    <option value="March">March</option>
+                                                                    <option value="April">April</option>
+                                                                    <option value="May">May</option>
+                                                                    <option value="June">June</option>
+                                                                    <option value="July">July</option>
+                                                                    <option value="August">August</option>
+                                                                    <option value="September">September</option>
+                                                                    <option value="October">October</option>
+                                                                    <option value="November">November</option>
+                                                                    <option value="December">December</option>
+                                                                </select>
+
+                                                                <select name="title--seclect--dob1"
+                                                                    id="title--seclect--dob1">
+
+                                                                    <option value="2002">2002</option>
+                                                                    <option value="2001">2001</option>
+                                                                    <option value="2000">2000</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="group--row--col">
+                                                            <div class="row10">
+                                                                <p>
+                                                                    <span class="form--col--title">Passport/ ID Card
+                                                                        Number<span class="red">*</span>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="form--col--content">
+                                                                <input class="input" type="text" name="GivenName"
+                                                                    placeholder="Enter as in passport">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="group--row--col">
+                                                            <div class="row10">
+                                                                <p>
+                                                                    <span class="form--col--title">Nationality <span
+                                                                            class="red">*</span>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="form--col--content">
+                                                                <select name="title--seclect" id="title--seclect">
+
+                                                                    <option value="VIETNAM">VIETNAM</option>
+                                                                    <option value="USA">USA</option>
+                                                                    <option value="OTHER">OTHER</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="group--row--col">
+                                                            <div class="row10">
+                                                                <p>
+                                                                    <span class="form--col--title">Preferred Language
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="form--col--content">
+                                                                <select name="title--seclect" id="title--seclect">
+
+                                                                    <option value="VIETNAM">VIETNAMESE</option>
+                                                                    <option value="USA">ENGLISH</option>
+                                                                    <option value="OTHER">OTHER</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="col--nextStep--btn">
+                                                    <input type="button" class="nextStep--btn"
+                                                        data-nextstep="enrollStep2" value="Next step">
+
+                                                </div>
+                                            </li>
+
+                                        </div>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+
+                            <div class="enrollContent">
+                                <div class="enrollSteps">
+                                    <ul class="enrollStep--link">
+                                        <li class="enrollStep1"><a class="center" href="#">Personal Information</a><i class="right1"></i></li>
+                                        <li class="enrollStep2"><a class="center" href="#">Contact Details</a><i class="right2"></i></li>
+                                        <li class="enrollStep3"><a class="center" href="#">Extra Information</a></li>
+                                    </ul>
+                                    <ul class="enroll--content--form">
+                                        <div class="enroll--form">
+                                            <li class="step--content1">
+                                                <div class="row">
+                                                    <div class="col1">
+                                                        <h2 class="step--title">Address</h2>
+                                                        <span>Please fill in your Address / Phone Number / Email fully
+                                                            and accurately.</span>
+                                                    </div>
+
+                                                    <div class="col2">
+                                                        <div class="group--row--col">
+                                                            <div class="row10">
+                                                                <p>
+                                                                    <span class="form--col--title">Address Type<span
+                                                                            class="red">*</span>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="form--col--content">
+
+                                                                <fieldset class="switcher--contact">
+                                                                    <label for="business"
+                                                                        class="switcher--label--business">
+                                                                        <input type="hidden" value="business">
+                                                                        <span
+                                                                            class="switcher--label--content">Business</span>
+                                                                    </label>
+                                                                    <label for="home" class="switcher--label--home">
+                                                                        <input type="hidden" value="home">
+                                                                        <span
+                                                                            class="switcher--label--content">Home</span>
+                                                                    </label>
+                                                                </fieldset>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="group--row--col">
+                                                            <div class="row10">
+                                                                <p>
+                                                                    <span class="form--col--title1">Company Name<span
+                                                                            class="red">*</span>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="form--col--content">
+                                                                <input class="input" type="text" name="companyName"
+                                                                    placeholder="Enter">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="group--row--col">
+                                                            <div class="row10">
+                                                                <p>
+                                                                    <span class="form--col--title1">Business title
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="form--col--content">
+                                                                <input class="input" type="text" name="businessTitle"
+                                                                    placeholder="Enter">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="group--row--col">
+                                                            <div class="row10">
+                                                                <p>
+                                                                    <span class="form--col--title">Address line 1<span
+                                                                            class="red">*</span>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="form--col--content">
+                                                                <input class="input" type="text" name="companyName"
+                                                                    placeholder="Enter">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="group--row--col">
+                                                            <div class="row10">
+                                                                <p>
+                                                                    <span class="form--col--title">Address line 2
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="form--col--content">
+                                                                <input class="input" type="text" name="companyName"
+                                                                    placeholder="Enter">
+                                                            </div>
+                                                        </div>
+                                                        <div class="group--row--col">
+                                                            <div class="row10">
+                                                                <p>
+                                                                    <span class="form--col--title">Address line 3
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="form--col--content">
+                                                                <input class="input" type="text" name="companyName"
+                                                                    placeholder="Enter">
+                                                            </div>
+                                                        </div>
+
+
+
+
+
+
+                                                        <div class="group--row--col">
+                                                            <div class="row10">
+                                                                <p>
+                                                                    <span class="form--col--title">Country/Region <span
+                                                                            class="red">*</span>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="form--col--content">
+                                                                <select name="title--seclect" id="title--seclect">
+
+                                                                    <option value="VIETNAM">VIETNAM</option>
+                                                                    <option value="USA">USA</option>
+                                                                    <option value="OTHER">OTHER</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="group--row--col">
+                                                            <div class="row10">
+                                                                <p>
+                                                                    <span class="form--col--title">Province/State<span
+                                                                            class="red">*</span>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="form--col--content">
+                                                                <input class="input" type="text" name="Province/State"
+                                                                    placeholder="Enter">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="group--row--col">
+                                                            <div class="row10">
+                                                                <p>
+                                                                    <span class="form--col--title">Distric/City<span
+                                                                            class="red">*</span>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="form--col--content">
+                                                                <input class="input" type="text" name="District/City"
+                                                                    placeholder="Enter">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="group--row--col">
+                                                            <div class="row10">
+                                                                <p>
+                                                                    <span class="form--col--title">Postal Code
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="form--col--content">
+                                                                <input class="input" type="text" name="PostalCode"
+                                                                    placeholder="(Residents of Vietnam; Please enter Postal Code as 10000).">
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col1">
+                                                            <h2 class="step--title">Phone</h2>
+
+                                                        </div>
+                                                        <div class="col2">
+                                                            <div class="group--row--col">
+                                                                <div class="row10">
+                                                                    <p>
+                                                                        <span class="form--col--title">Mobile <span
+                                                                                class="red">*</span>
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+                                                                <div class="form--col--content">
+                                                                    <select name="phoneRegion--seclect"
+                                                                        id="phoneRegion--seclect">
+
+                                                                        <option value="VIETNAM">VIETNAM(+84)</option>
+                                                                        <option value="MASACHUSETTS">MASACHUSETTS(+339)
+                                                                        </option>
+                                                                        <option value="OTHER">OTHER</option>
+                                                                    </select>
+                                                                    <input class="input" type="text" name="phone"
+                                                                        placeholder="Maximum 15 numerics">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="group--row--col">
+                                                                <div class="row10">
+                                                                    <p>
+                                                                        <span class="form--col--title">Other
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+                                                                <div class="form--col--content">
+                                                                    <select name="phoneRegion--seclect"
+                                                                        id="phoneRegion--seclect">
+
+                                                                        <option value="VIETNAM">VIETNAM(+84)</option>
+                                                                        <option value="MASACHUSETTS">MASACHUSETTS(+339)
+                                                                        </option>
+                                                                        <option value="OTHER">OTHER</option>
+                                                                    </select>
+                                                                    <input class="input" type="text" name="Other"
+                                                                        placeholder="Maximum 15 numerics">
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+
+
+
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col1">
+                                                            <h2 class="step--title">Email</h2>
+
+                                                        </div>
+                                                        <div class="col2">
+                                                            <div class="group--row--col">
+                                                                <div class="row10">
+                                                                    <p>
+                                                                        <span class="form--col--title">Email
+                                                                            Address<span class="red">*</span>
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+
+                                                                <div class="form--col--content">
+                                                                    <input class="input" type="text" name="emailAddress"
+                                                                        placeholder="Enter">
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="col--nextStep--btn">
+                                                        <input type="button" class="nextStep--btn"
+                                                            data-nextstep="enrollStep2" value="Next step">
+
+                                                    </div>
+                                            </li>
+
+                                        </div>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+
+                            <div class="enrollContent">
+                                <div class="enrollSteps">
+                                    <ul class="enrollStep--link">
+                                        <li class="enrollStep1"><a class="center" href="#">Personal Information</a><i class="right1"></i></li>
+                                        <li class="enrollStep2"><a class="center" href="#">Contact Details</a><i class="right2"></i></li>
+                                        <li class="enrollStep3"><a class="center" href="#">Extra Information</a></li>
+                                    </ul>
+                                    <ul class="enroll--content--form">
+                                        <div class="enroll--form">
+                                            <li class="step--content1">
+                                                <div class="row">
+                                                    <h2 class="step--title">Extra Information</h2>
+                                                    <div class="col1_extra_in4">
+                                                        <h3 class="step--title">Special offer code</h3>
+
+                                                    </div>
+
+                                                    <div class="col2_extra_in4">
+
+                                                        <div class="form--col--content2">
+                                                            <input class="input2" type="text" name="SpecialCode"
+                                                                placeholder="Enter">
+                                                        </div>
+
+                                                        <div class="form--col--content3">
+                                                            <label class="container">
+                                                                <input type="checkbox" checked="checked">
+                                                            </label>
+                                                            <span class="checkmark"><span class="red">*</span>I agree to
+                                                                the Terms and Conditions of the Lotusmiles program and
+                                                                accept the Envity Privacy Policy</span>
+                                                        </div>
+
+
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col1_extra_in4">
+                                                        <h3 class="step--title">Verify your submission</h3>
+
+                                                    </div>
+                                                    <div class="col2_extra_in4">
+
+                                                        <div class="form--col--content4">
+                                                            <label class="container">
+                                                                <input type="checkbox" checked="checked">
+                                                            </label>
+                                                            <span class="checkmark"><span class="red">*</span>I'm not a robot</span>
+                                                        </div>
+
+                                                        
+
+
+
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="col--nextStep--btn">
+                                                    <input type="button" class="nextStep--btn"
+                                                        data-nextstep="enrollStep2" value="Create menber profile">
+
+                                                </div>
+                                            </li>
+
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer--container">
+            <div class="footer">
+                <p class="draft">This is footer</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

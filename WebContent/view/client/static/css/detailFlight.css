@@ -1,0 +1,1042 @@
+html {
+    color: #000;
+    background: #fff;
+}
+body, button{
+    font-family: Open Sans,sans-serif;
+}
+div,ul,li {
+    padding: 0;
+    margin: 0;
+}
+div{
+    display: block;
+}
+ul{
+    list-style: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 10px;
+}
+.page{
+    min-width: 1140px;
+    margin: 0 auto;
+    width: auto;
+    position: relative;
+    background-color:#f3f2f2;
+}
+.header{
+    position: relative;
+    display: block;
+
+}
+.header_menu{
+    background-color: #f4f3ef;
+    display: table;
+    table-layout: fixed;
+    height: 32px;
+    width: 100%;
+    position: relative;
+    z-index: 6;
+}
+.header_menu_info {
+    display: table-cell;
+    vertical-align: middle;
+    white-space: nowrap;
+    z-index: 4;
+}
+.header_brand {
+    height: 100px;
+    position: relative;
+    z-index: 3;
+    background: #21033a;
+    -webkit-filter: none;
+    filter: none;
+}
+.header_brand_content {
+    box-sizing: border-box;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    height: 100%;
+}
+.header_brand_content_inner {
+    display: table;
+    height: 100%;
+    width: 100%;
+    min-height: 87px;
+    box-sizing: border-box;
+    position: relative;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+.header_brand_content_inner_logo{
+    display: block;
+    margin-left: 50px;
+}
+.body_content{
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 960px;
+    box-sizing: border-box;
+    z-index: 2;
+    margin: 15px auto 20px;
+    clear: both;
+    min-width: 960px;
+}
+.title{
+    font-size: 30px;
+    margin-bottom: 16px;
+    margin-top: 21px;
+    font-weight: 600;
+}
+.sidebar {
+    display: block;
+    padding: 0 0 0 20px;
+    float: right;
+    vertical-align: top;
+    width: 220px;
+   
+}
+.sidebar_passengers{
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 40%);
+    background: #fff;
+    margin-bottom: 16px;
+}
+.sidebar_passengers_image_top{
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 40%);
+    border-radius: 4px;
+}
+.sidebar_passengers_image_top .innertext{
+    padding: 16px;
+    color: #fff;
+}
+.sidebar_passengers_image_top .innertext .innertext1{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.sidebar_passengers_image_top .innertext .innertext2{
+    font-weight: 600;
+    line-height: 1.4;
+    font-size: 21px;
+}
+.sidebar_passengers_travellers{
+    padding: 16px;
+}
+.sidebar_passengers_travellers_innertext1{
+    padding-bottom: 8px;
+    color: #333;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.4;
+
+}
+.sidebar_passengers_travellers_innertext2{
+    color: #333;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.sidebar_passengers_bags{
+    border-top: 1px solid #ccc;
+    padding: 16px;
+}
+.sidebar_passengers .title_wrap{
+    padding-bottom: 16px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-right: -10px;
+    margin-left: -10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap
+}
+.sidebar_passengers .title_text{
+    max-width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    color: #333;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.4;
+    width: auto;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex: auto;
+}
+.sidebar_passengers_bags .bags_segments_departure {
+    margin-right: 0;
+    margin-left: 0;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.sidebar_passengers_bags .bags_segments_departure_1 {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+    flex:   auto;
+}
+.sidebar_passengers_bags .bags_segments_departure_1_text{
+    color: #333;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.sidebar_passengers_bags .bags_segments_departure_2{
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+    width: auto;
+    flex-basis: auto;
+    flex-grow: 0;
+}
+.sidebar_passengers_bags .bags_segments_departure_2_text{
+    color: #888;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.sidebar_passengers_bags .bags_segments_return {
+    margin-right: 0;
+    margin-left: 0;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.sidebar_passengers_bags .bags_segments_return_1{
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+    flex:   auto;
+}
+.sidebar_passengers_bags .bags_segments_return_1_text{
+    color: #333;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.sidebar_passengers_bags .bags_segments_return_2{
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+    width: auto;
+    flex-basis: auto;
+    flex-grow: 0;
+}
+
+.sidebar_passengers_bags .bags_segments_return_2_text{
+    color: #888;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.sidebar_passengers_services{
+    border-top: 1px solid #ccc;
+    padding: 16px;
+}
+.sidebar_passengers_services_innertext{
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #888;
+}
+.sidebar_passengers_prime{
+    border-top: 1px solid #ccc;
+}
+.sidebar_passengers_prime .primeSection{
+    padding: 16px;
+}
+.sidebar_passengers .wrap1{
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+    flex: auto;
+}
+.sidebar_passengers .wrap2{
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+    flex: auto;
+    width: auto;
+    flex-basis: auto;
+    flex-grow: 0;
+}
+.sidebar_passengers_prime .primeSection_text1{
+    margin-right: 0;
+    margin-left: 0;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;  
+}
+.sidebar_passengers_prime .primeSection_text1_innertext1{
+    color: #333;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.sidebar_passengers_prime .primeSection_text1_innertext2{
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.sidebar_passengers_prime .primeSection_text2{
+    margin-right: 0;
+    margin-left: 0;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.sidebar_passengers_prime .primeSection_text2_innertext1{
+    color: #333;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.sidebar_passengers_prime .primeSection_text2_innertext2{
+    color: #1cb670;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.sidebar_passengers_prime .totalPrice{
+    padding: 16px;
+}
+.sidebar_passengers_prime .totalPrice_text1{
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 4px;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.sidebar_passengers_prime .totalPrice_text1_innertext1{
+    font-weight: 700;
+}
+.sidebar_passengers_prime .totalPrice_text1_innertext2{
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.4;
+}
+.sidebar_passengers_prime .totalPrice_text2{
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 4px;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.sidebar_passengers_prime .totalPrice_text2_innertext{
+    color: #888;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.sidebar_passengers_prime .totalPrice_text3{
+    color: #888;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.sidebar_persuasion{
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 40%);
+}
+.sidebar_persuasion_title{
+    font-size: 16px;
+    font-weight: 600;
+    color: #21033a;
+    padding: 20px;
+}
+.sidebar_persuasion_reasons{
+    padding: 0 20px 20px;
+}
+.sidebar_persuasion_reasons li:before{
+    font-family: theme-icons;
+    color: #1cb670;
+    content: "7";
+    position: absolute;
+    left: -25px;
+    top: 3px;
+}
+.sidebar_persuasion_reasons li{
+    font-size: 14px;
+    color: #333;
+    position: relative;
+    margin-left: 25px;
+    padding-bottom: 10px;
+}
+.details{
+    width: 700px;
+    max-width: 700px;
+    display: table-cell;
+}
+.details_persuasiveMessage{
+    transition: opacity .5s cubic-bezier(0.4, 0, 1, 1);
+    max-height: 100px;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.details_persuasiveMessage_wrap{
+    position: relative;
+    background: #fff;
+    border-radius: 4px;
+}
+.details_persuasiveMessage_wrap_inside{
+    background: #e6f5e6;
+    border-color: transparent;
+    display: table;
+    width: 100%;
+    table-layout: auto;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.details_persuasiveMessage_wrap_inside_content{
+    color: #3d8f5d;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    box-sizing: border-box;
+    vertical-align: middle;
+    display: table-cell;
+    padding: 10px 5px;
+}
+.details_persuasiveMessage_wrap_inside_content1{
+    color: #3d8f5d;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.details_persuasiveMessage_wrap_inside_content2{
+    color: #3d8f5d;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.details_login{
+    margin-bottom: 24px;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 40%);
+    background: #fff;
+}
+.details_login_wrap{
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.details_login_wrap_text{
+    max-width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    flex: auto;
+}
+.details_login_wrap_text_innertext{
+    font-weight: 600;   
+}
+.details_login_wrap_button{
+    max-width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    width: auto;
+    flex-basis: auto;
+    flex-grow: 0;
+    /* flex: auto; */
+}
+.details_login_wrap_button_inside{
+    white-space: nowrap;
+    color: #21033a;
+    border-style: solid;
+    border-color: #ccc;
+    box-shadow: none;
+    background: linear-gradient(#fff,#f5f5f5);
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    box-sizing: border-box;
+    user-select: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 16px;
+    min-width: 0;
+    border-width: 1px;
+    border-radius: 4px;
+    line-height: 1;
+}
+.details_flight{
+    margin-bottom: 16px;
+    /* border-top: 4px solid #21033a; */
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 40%);
+    background: #fff;
+}
+.details_flight_header{
+    margin-bottom: 8px;
+    margin-left: -10px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.details_flight_header_text{
+    max-width: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+    flex: auto;
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #333;
+}
+.details_flight_body{
+    padding-top: 328px;
+    position: relative;
+    overflow: inherit;
+    padding-top: 1px!important;
+    background: #fff;
+    border-radius: 4px;
+}
+.details_flight_body_content{
+    position: static;
+    bottom: 100%;
+    width: 100%;
+}
+.details_flight_body_content_title{
+    box-sizing: border-box;
+    padding: 10px 24px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+    display: table;
+    width: 100%;
+    table-layout: auto;
+}
+.details_flight_body_content_title_1{
+    display: flex;
+    align-items: center;
+}
+.details_flight_body_content_title_1_logo{
+    float: left;
+    background-size: 24px;
+    width: 27px;
+    height: 27px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+.details_flight_body_content_title_1_text1{
+    float: left;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+     color:black;
+}
+.details_flight_body_content_inside_left_last_text_1_time{
+	color:black;
+}
+
+.details_flight_body_content_title_1_text2{
+    float: left;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color:black;
+}
+.details_flight_body_content_title_2{
+    padding-left: 0;
+    padding-right: 0;
+    display: table-cell;
+    color: #666;
+    position: relative;
+    text-align: right;
+    margin-bottom: 9px;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.details_flight_body_content_inside{
+    box-sizing: border-box;
+    padding: 14px 24px 20px;
+    border-bottom: 1px solid #ededed;
+    display: table;
+    width: 100%;
+    color:black;
+    table-layout: auto;
+}
+.details_flight_body_content_inside_left{
+    padding-left: 0;
+    padding-right: 0;
+    display: table-cell;
+    width: 50%;
+    box-sizing: border-box;
+    vertical-align: middle;
+    table-layout: fixed;
+}
+.details_flight_body_content_inside_left_first{
+    padding-right: 16px;
+    vertical-align: top;
+    padding-left: 0;
+    display: table-cell;
+    width: 25%;
+    box-sizing: border-box;
+}
+.details_flight_body_content_inside_left_first_text{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.details_flight_body_content_inside_left_first_text_1, .details_flight_body_content_inside_left_last_text_1{
+    line-height: 1.4;
+    font-weight: 400;
+    font-size: 21px;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.details_flight_body_content_inside_left_first_text_2, .details_flight_body_content_inside_left_last_text_2{
+    color: #666;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.details_flight_body_content_inside_left_middle{
+    padding-left: 0;
+    padding-right: 0;
+    display: table-cell;
+    color: #666;
+    position: relative;
+    text-align: center;
+    width: 16.66667%;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+.details_flight_body_content_inside_left_middle_line{
+    display: table;
+    width: 100%;
+    table-layout: auto;
+}
+.details_flight_body_content_inside_left_middle_text{
+    color: #1cb670;
+    font-size: 11px;
+    line-height: 1.4;
+    font-weight: 400;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.details_flight_body_content_inside_left_last{
+    padding-left: 24px;
+    vertical-align: top;
+    padding-right: 0;
+    display: table-cell;
+    width: 25%;
+    box-sizing: border-box;
+}
+.details_flight_body_content_inside_right{
+    padding-left: 32px;
+    vertical-align: top;
+    padding-right: 0;
+    display: table-cell;
+    width: 33.33333%;
+    box-sizing: border-box;
+}
+.details_flight_body_content_inside_right_text_1{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.details_flight_body_content_inside_right_text_2{
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    padding-top: 8px;
+    color: #666;
+    position: relative;
+}
+.details_passengers{
+    margin-bottom: 20px;
+    /* border-top: 4px solid #21033a; */
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 40%);
+    background: #fff;
+}
+.details_passengers_header{
+    padding: 10px 20px;
+    font-size: 21px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #333;
+}
+.details_passengers_header_wrap_text_2{
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 300;
+    color: #666;
+    margin-left: 5px;
+}
+.details_passengers_content_wrap{
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+position: relative;
+padding: 0;
+font-size: 14px;
+font-weight: 600;
+color: #333;
+display: inline-block;
+width: 100%;
+}
+.details_passengers_content_wrap_gender{
+    position: relative;
+    margin: 0 0 10px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    clear: both
+}
+.details_passengers_content_wrap_gender_field, .details_passengers_content_wrap_info_field{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+
+}
+.details_passengers_content_wrap_gender_field_checkbox{
+    margin: 0 26px 10px 0;
+    display: inline-block;
+}
+.details_passengers_content_wrap_gender_field_checkbox_male, .details_passengers_content_wrap_gender_field_checkbox_female{
+    display: table-cell;    
+    padding-right: 20px;
+}
+.details_passengers_content_wrap_gender_field_checkbox_male_input, .details_passengers_content_wrap_gender_field_checkbox_female_input{
+    /* display: none; */
+}
+/* details_passengers_content_wrap_gender_field_checkbox_male_label, .details_passengers_content_wrap_gender_field_checkbox_female_label{
+    cursor: pointer;
+    color: #666;
+    font-size: 14px;
+    font-weight: 400;
+    user-select: none;
+} */
+/* .details_passengers_content_wrap_gender_field_checkbox_male_label_radio, .details_passengers_content_wrap_gender_field_checkbox_female_label_radio{
+    padding: 5px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: inset 0 0 4px rgb(0 0 0 / 20%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: -4px 7px 0 0;
+    line-height: 0;
+} */
+/* .details_passengers_content_wrap_gender_field_checkbox_male_label_radio_fill, .details_passengers_content_wrap_gender_field_checkbox_female_label_radio_fill{
+    width: 8px;
+    height: 8px;
+    background: #1e44d5;
+    border-radius: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 1;
+} */
+.details_passengers_content_wrap_info{
+    position: relative;
+    margin: 0 0 10px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    clear: both;
+}
+.details_passengers_content_wrap_info_field{
+    padding-right: 5px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin-bottom: 15px;
+}
+.details_passengers_content_wrap_info_field_nowrap, .details_billing_content_form_section_inside_email_field_nowrap,
+.details_billing_content_form_section_inside_address_field_nowrap,.details_billing_content_form_section_inside_country_field_nowrap,
+.details_billing_content_form_section_inside_phoneCode_field_nowrap{
+    display: block;
+    padding: 0 10px 10px 4px;
+    font-size: 14px;
+    font-weight: 600;                                                                                                                   
+    color: #333;
+    white-space: nowrap;
+}
+.details_passengers_content_wrap_info_field_wrapper{
+    margin: 0 26px 10px 0;
+    display: inline-block;
+}
+.details_passengers_content_wrap_info_field_wrapper_input{
+    height: 40px;
+    width: 270px;
+    display: block;
+    box-sizing: border-box;
+    transition: all .05s linear;
+    vertical-align: middle;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.4;
+    border-radius: 4px;
+    padding: 9.5px 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    box-shadow: inset 0 0 4px rgb(0 0 0 / 20%);
+}
+.details_passengers_content_wrap_info_field_bottom, .details_billing_content_form_section_inside_email_field_bottom,
+.details_billing_content_form_section_inside_adress_field_bottom,.details_billing_content_form_section_inside_phoneCode_field_bottom{
+    position: absolute;
+    left: 10px;
+    bottom: -8px;
+    opacity: 0;
+    transition: opacity .25s;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #888;
+}
+.details_passengers_content_wrap_info_field_birth,.details_passengers_content_wrap_info_field_type{
+    margin-right: 0;
+    width: auto;
+    float: none;
+    margin: 0 26px 10px 0;
+    display: inline-block;
+}
+.details_passengers_content_wrap_info_field_birth_wrapper,.details_passengers_content_wrap_info_field_type_wrapper{
+    margin-right: 5px;
+    position: relative;
+}
+.details_passengers_content_wrap_info_field_birth_wrapper_day,.details_passengers_content_wrap_info_field_birth_wrapper_month,
+.details_passengers_content_wrap_info_field_birth_wrapper_year,.details_passengers_content_wrap_info_field_type_wrapper_people,
+.details_billing_content_form_section_inside_country_field_wrapper_input_1,.details_billing_content_form_section_inside_country_field_wrapper_input_2,
+.details_billing_content_form_section_inside_phoneCode_field_wrapper_input_1{
+    width: 80px;
+    user-select: none;
+    cursor: pointer;
+    vertical-align: middle;
+    font-size: 14px;
+    padding: 9px 10px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    box-shadow: inset 0 0 4px rgb(0 0 0 / 20%);
+    box-sizing: border-box;
+    height: 40px;
+    font-weight: 400;
+    font-style: normal;
+    appearance: none;
+}
+.details_billing_content_form_section_inside_country_field_wrapper_input_1{
+    width: 330px;
+}
+.details_billing_content_form_section_inside_country_field_wrapper_input_2,.details_billing_content_form_section_inside_phoneCode_field_wrapper_input_1{
+    width: 210px;
+}
+.details_passengers_content_wrap_info_field_birth_wrapper_month{
+    width: 130px;
+}
+.details_passengers_content_wrap_info_field_birth_wrapper_year{
+    width: 95px;
+}
+.details_passengers_content_wrap_info_field_type_wrapper_people{
+    width: 325px; 
+}
+.addPassengerBtn_wrap,.buyTicketBtn_wrap{
+    margin-top: -10px;
+    padding: 10px 5px;
+}
+.addPassengerBtn,.buyTicketBtn {
+    white-space: nowrap;
+    color: #21033a;
+    border-style: solid;
+    border-color: #ccc;
+    box-shadow: none;
+    background: linear-gradient(#fff,#f5f5f5);
+    display: inline-block;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 16px 16px;
+    min-width: 0;
+    border-width: 1px;
+    border-radius: 8px;
+    line-height: 1;
+  }
+.details_billing_header{
+    padding: 10px 20px;
+    font-size: 21px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #333;
+  }
+.buyTicketBtn{
+    color:white;
+    background: #21033a;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 16px 16px;  
+}
+.details_billing_content{
+    padding-top: 0;
+}
+.details_billing_content_form{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    position: relative;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    display: inline-block;
+    width: 100%;
+}
+.details_billing_content_form_section{
+    position: relative;
+}
+.details_billing_content_form_section_inside{
+    position: static;
+    bottom: 100%;
+    width: 100%;
+}
+.details_billing_content_form_section_inside_email, .details_billing_content_form_section_inside_address,
+.details_billing_content_form_section_inside_country,.details_billing_content_form_section_inside_phoneCode{
+    position: relative;
+    margin: 0 0 10px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    clear: both;
+}
+.details_billing_content_form_section_inside_email_field, .details_billing_content_form_section_inside_address_field,
+.details_billing_content_form_section_inside_country_field,.details_billing_content_form_section_inside_phoneCode_field{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.details_billing_content_form_section_inside_email_field_wrapper,.details_billing_content_form_section_inside_address_field_wrapper,
+.details_billing_content_form_section_inside_country_field_wrapper,.details_billing_content_form_section_inside_phoneCode_field_wrapper{
+    margin: 0 26px 10px 0;
+    display: inline-block;
+}
+.details_billing_content_form_section_inside_email_field_wrapper_input, .details_billing_content_form_section_inside_address_field_wrapper_input
+,.details_billing_content_form_section_inside_country_field_wrapper_input_3,.details_billing_content_form_section_inside_phoneCode_field_wrapper_input_2{
+    height: 40px;   
+    width: 270px;    
+    display: block;
+    box-sizing: border-box;
+    transition: all .05s linear;
+    vertical-align: middle;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.4;
+    border-radius: 4px;
+    padding: 9.5px 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    box-shadow: inset 0 0 4px rgb(0 0 0 / 20%)
+}
+.details_billing_content_form_section_inside_country_field_wrapper_input_3{
+    width: 100px;
+}
+.details_billing_content_form_section_inside_phoneCode_field_wrapper_input_2{
+    width: 180px;
+}

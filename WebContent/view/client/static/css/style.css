@@ -1,0 +1,722 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* basic setup */
+html {
+    text-rendering: optimizeLegibility;
+    color: white;
+    font-size: 20px;
+    font-family: "cerapro-bold", sans-serif !important;
+    line-height: 120%;
+}
+
+body {
+    background: rgb(33, 6, 57) !important;
+    font-family: "cerapro-bold", sans-serif !important;
+}
+
+.box {
+    width: 80%;
+    margin: 0 auto;
+}
+   
+    /* add thanh search */
+    
+ .resultSearch{
+   
+    background-color: #210340;
+    color:white;
+  }
+  .container1{
+    max-width: 1224px;
+    margin: 0 auto;
+  }
+  .resultSearch--formview{
+    background-color: #210340;
+  }
+  .resultSearch--formview--select{
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  .formview--select--roundtrip{
+    margin-right: 1rem;
+  }
+  .formview--select--person{
+    margin-right: 1rem;
+  }
+  
+  .search--group{
+    display: flex;
+    width: 100%;
+    padding:0 10%;
+    
+    
+  }
+  .search--group--from{
+    padding-right: 1.5rem;
+    width: 24%;
+  }
+  .search--group--to{
+    padding-right: 1.5rem;
+    width: 24%;
+  }
+  .search--group--Datefrom{
+    padding-right: 1.5rem;
+    width: 24%;
+  }
+  .search--group--Dateto{
+    padding-right: 1.5rem;
+    width: 24%;
+  }
+  .search--group--btn button{
+    background: #f7498e;
+  }
+  .search--group--btn button:hover{
+    background: #d44f84;
+  }
+  .glyphicon{
+    color:white
+  }
+  .btn-outline-secondary{
+    color: black;
+    background-color: white;
+  }
+  .custombutton{
+    border: none;
+    background: none;
+    color:white
+  }
+  .custombutton:visited,:hover,:focus{
+    border: none;
+  }
+ 
+ 
+ 
+  /* add thanh search */
+.sign-in div:last-child {
+    display: none;
+}
+
+/*styling for header with navigation bar - vertical*/
+.horizontal-navigation-bar {
+    height: 62px;
+    width: 100%;
+    padding: 0 10%;
+    background: rgb(20, 1, 39);
+    display: grid;
+    grid-template-columns: 0.3fr 3fr 0.5fr;
+}
+
+/*for logo part*/
+.logo-site {
+    display: inline-block;
+    
+}
+
+/*basic style for navigation bar*/
+.navigation-bar {
+    font-size: 70%;
+    display: flex;
+    align-items: center;
+    height: 62px;
+}
+
+/*navigation bar items flight, stays, car, .... with register part*/
+.navigation-items, .register-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 62px;
+    color: white;
+}
+
+/*not apply this style for the last child*/
+.navigation-items div:not(:last-child) span {
+    display: flex;
+    align-items: center;
+}
+
+/*style for div that contain svg and span */
+.navigation-items div {
+    margin: 0 15px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/*fixed style for the first child*/
+.navigation-items div:first-child {
+    color: rgb(242, 114, 43);
+    position: relative;
+    padding: 19px 0;
+}
+
+.navigation-items div:first-child:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(45deg, rgb(245, 83, 140), rgb(247, 119, 124), rgb(249, 152, 110));
+}
+
+/*hover effects for navigation items and register-part*/
+.navigation-items div:hover,
+.register-part div:hover {
+    color: rgb(242, 114, 43);
+}
+
+.dropdown-menu-for-navigationBar {
+    position: relative;
+}
+
+.dropdown-content-forPc,
+.dropdown-content-forTablet,
+.dropdown-content-forPhones {
+    position: absolute;
+    width: 165px;
+    background: white;
+    display: none;
+    z-index: 99;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    left: -15px;
+}
+
+.dropdown-content-forPc ul li,
+.dropdown-content-forTablet ul li,
+.dropdown-content-forPhones ul li {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.dropdown-content-forPc ul li a,
+.dropdown-content-forTablet ul li a,
+.dropdown-content-forPhones ul li a {
+    color: black;
+    font-size: 80%;
+}
+.dropdown-content-forPc ul li:hover a,
+.dropdown-content-forTablet ul li:hover a,
+.dropdown-content-forPhones ul li:hover a {
+    color: rgb(242, 114, 43);
+}
+
+.dropdown-content-forPc ul li:first-child a,
+.dropdown-content-forTablet ul li:first-child a,
+.dropdown-content-forPhones ul li:first-child a {
+    color: rgb(242, 114, 43);
+}
+
+.dropdown-content-forPc ul li:last-child,
+.dropdown-content-forTablet ul li:last-child,
+.dropdown-content-forPhones ul li:last-child{
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding: 20px 10px;
+}
+
+.dropdown-menu-for-navigationBar:hover .dropdown-content-forPc {
+    display: block;
+}
+
+
+/*for register-part contain register and sign in button */
+
+.sign-in{
+	display:flex;
+}
+.register div, .sign-in div {
+    font-size: 70%;
+    font-weight: 700;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.register a, .sign-in a{
+	font-size: 70%;
+	color: white;
+	font-weight:700;
+	
+}
+
+.register a{
+	margin-right:20px;
+}
+
+/*for header part*/
+header {
+    height: 335px;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.15)), url("https://i.pinimg.com/originals/dd/91/4c/dd914c6cca076f8cebb463a81e73e7e5.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*part above the search bar*/
+.extend-choice {
+    display: flex;
+    align-items: center;
+    padding: 40px 0 20px 0;
+    color: white;
+}
+
+.extend-choice div {
+    font-size: 80%;
+    margin: 0 25px 0 0;
+    cursor: pointer;
+}
+
+.extend-choice div span {
+    display: flex;
+    align-items: center;
+}
+
+.travel-inspiration {
+    padding: 80px 0;
+    color: white;
+    
+}
+
+.box-container-travel-inspiration {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+.travel-plan-box {
+    position: relative;
+    border-radius: 4px;
+    height: 330px;
+    overflow: hidden;
+}
+.travel-plan-box img {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    /*top: -20px;*/
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.travel-plan-box img:hover {
+    transform: scale(1.2);
+}
+.footer-extrainfo {
+    text-align: left;
+    padding: 5px 0 5px 15px;
+    font-size: 60%;
+    font-weight: 100;
+    color: rgba(0,0,0,0.6);
+}
+.footer-title {
+    text-align: left;
+    padding: 0 10px 20px 15px;
+    color: rgba(0,0,0,0.6);
+    font-size: 80%;
+}
+.travel-plan-box div {
+    background: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.more-inspiration{
+    text-align: center;
+}
+.more-inspiration a{
+    color: white;
+    font-size: 75%;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid white;
+    letter-spacing: 1px;
+}
+
+.trending-cities {
+    margin: 40px 0;
+    color: white;
+    
+}
+.box-container-trending-cities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 12px;
+}
+
+.trending-country {
+    margin: 100px 0;
+    color: white;
+}
+.box-container-trending-country {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 12px;
+}
+
+.country-plan-box, .cities-plan-box {
+    position: relative;
+    border-radius: 4px;
+    height: 90px;
+    display: flex;
+}
+.country-plan-box img, .cities-plan-box img {
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    text-align: center;
+}
+.country-plan-box .footer-extrainfo,
+.cities-plan-box .footer-extrainfo {
+    text-align: left;
+    padding: 10px 0 0 15px;
+    font-size: 65%;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: rgba(0,0,0,0.6);
+}
+.country-plan-box .footer-title,
+.cities-plan-box .footer-title {
+    text-align: left;
+    padding: 0 0 0 15px;
+    color: rgba(0,0,0,0.6);
+    font-size: 80%;
+}
+.country-plan-box div, .cities-plan-box div {
+    background: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 55%;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.country-plan-box div:hover,
+.cities-plan-box div:hover {
+    background: rgba(255,255,255,0.9);
+}
+
+.columns-flights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 10px;
+    color: white;
+}
+.flights {
+    border-bottom: 1px solid #0870a0;
+    padding: 4px 0;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+.flight {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flights-destination-list {
+    font-size: 60%;
+    width: 100%;
+    color: rgba(255,255,255,0.8);
+    position: absolute;
+    display: none;
+    z-index: 99;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #b4b4b4;
+    transition: all 0.3s;
+}
+.flights-destination-list a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+.flights-destination-list a:hover {background-color: rgba(0,0,0,0.15)}
+.flights:hover .flights-destination-list {
+    display: block;
+}
+
+.flight-name {
+    font-size: 80%;
+}
+
+.columns-how {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    font-size: 80%;
+    margin: 30px 0;
+    color: white;
+}
+.how-to {
+    border-bottom: 1px solid #0870a0;
+    padding: 4px 0;
+    cursor: pointer;
+    position: relative;
+}
+.ques {
+    display: flex;
+    justify-content: space-between;
+}
+.how-to-find-cheap-flights {
+    margin: 80px 0;
+}
+
+.dropdown-content p {
+    color: black;
+    text-align: justify;
+    padding: 0 10px;
+    margin: 20px 0;
+    font-size: 90%;
+}
+
+.dropdown-content {
+    width: 100%;
+    color: rgba(255,255,255,0.8);
+    position: absolute;
+    display: none;
+    padding: 4px 10px;
+    z-index: 99;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #b4b4b4;
+}
+.how-to:hover .dropdown-content {
+    display: block;
+}
+
+.a-little-bit-more {
+    margin: 180px auto 80px auto;
+    width: 90%;
+}
+
+.more-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.more-info h3 {
+    font-size: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+.more-info p {
+    font-size: 80%;
+    text-align: center;
+    color: rgb(167, 156, 178);
+}
+
+
+.trending-cities h1, .trending-country h1, .travel-inspiration h1,
+.flights-deal h1, .how-to-find-cheap-flights h1, .a-little-bit-more h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+    color: white;
+    font-weight: 700;
+}
+
+.h1{
+	font-size: 32px !important;
+    text-align: left;
+    margin: 15px 0;
+    color: white;
+    font-weight: 700;
+}
+
+.flights-deal p {
+    margin: 20px auto 35px auto;
+    text-align: center;
+    width: 60%;
+    font-size: 80%;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.trending-cities h2, .trending-country h2,
+.flights-deal h2, .travel-inspiration h2, .a-little-bit-more h2 {
+    margin: 20px auto 35px auto;
+    text-align: center;
+    width: 45%;
+    font-size: 20px;
+    font-weight: 100;
+    color: rgb(167, 156, 178);
+}
+
+.block-quote {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center !important;
+    font-weight: 100;
+    color: rgba(255,255,255,0.8);
+    line-height: 150%;
+}
+
+
+blockquote {
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center !important;
+    font-size: 120%;
+    font-weight: 100;
+    color: rgba(255,255,255,0.8);
+    line-height: 150%;
+}
+blockquote:before {
+    content: open-quote;
+    position: absolute;
+    top: 10px;
+    left: -52px;
+    font-size: 500%;
+    font-family: 'Sanchez', serif;
+    color: rgba(167, 156, 178, 0.5);
+}
+blockquote:after {
+    content: close-quote;
+    position: absolute;
+    top: 10px;
+    right: -52px;
+    font-size: 500%;
+    font-family: 'Sanchez', serif;
+    color: rgba(167, 156, 178, 0.5);
+}
+.block-quote p {
+    text-align: center !important;
+    color: rgb(167, 156, 178);
+    font-size: 80%;
+    font-style: italic;
+    margin: 10px 0;
+    font-weight: 100;
+}
+footer {
+    background: rgb(19, 1, 37);
+    padding: 40px 0;
+}
+.contact-information {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 30px;
+}
+
+.contact-information a {
+    color: white;
+    font-size: 60%;
+    font-weight: 100;
+    margin: 2px 0;
+}
+.company, .contact, .more {
+    display: flex;
+    flex-direction: column;
+    color:white;
+}
+.site-currency{
+	color:white;
+}
+.sites, .currency {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 8px;
+    margin: 8px 0;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+}
+
+.privacy {
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+}
+.privacy a {
+    color: rgb(167, 156, 178);
+    font-size: 60%;
+    margin: 0 12px;
+    font-weight: 100;
+}
+
+.footer-icons {
+    text-align: center;
+}
+.footer-icons a {
+    color: white;
+    font-size: 80%;
+    margin: 15px 8px;
+}
+
+.des-p {
+    font-size: 60%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 60px auto 30px auto;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.booking, .kayak, .open-table, .priceline, .agoda, .rentalcars {
+    background: url("https://www.momondo.com/res/images/horizon/ui/layout/footer/pcln-group-logos-2x.png?v=62d20f62b4765b5851338d6850283399d8b0c7a5&cluster=5"), no-repeat;
+    background-size: 122px 148px;
+    margin: 0 20px 20px;
+    display: inline-block;
+}
+
+.booking {
+    width: 94px;
+    height: 20px;
+    background-position: 0 0;
+}
+.kayak {
+    width: 89px;
+    height: 28px;
+    background-position: 0 -40px;
+}
+.open-table {
+    width: 98px;
+    height: 24px;
+    background-position: 0 -124px;
+}
+.priceline {
+    width: 92px;
+    height: 28px;
+    background-position: 0 -16px;
+}
+.agoda {
+    width: 48px;
+    height: 28px;
+    background-position: 0 -70px;
+}
+.rentalcars {
+    width: 122px;
+    height: 28px;
+    background-position: 0 -96px;
+}

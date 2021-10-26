@@ -1,0 +1,148 @@
+@media screen and (max-width: 1150px) {
+    .horizontal-navigation-bar {
+        padding: 0 5%;
+    }
+    .box {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 19px;
+    }
+    .box-container-travel-inspiration {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .travel-plan-box img {
+        height: 80%;
+    }
+    .box-container-trending-cities {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .box-container-trending-country {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .flights-deal p {
+        width: 70%;
+    }
+    .columns-flights {
+        grid-template-columns: 1fr;
+        padding: 0 30px;
+    }
+    .columns-how {
+        grid-template-columns: 1fr;
+        padding: 0 30px;
+    }
+    .more-info {
+        width: 100%;
+    }
+    .a-little-bit-more h2 {
+        width: 100%;
+    }
+    .footer-logos, .des-p {
+        display: none;
+    }
+    .sign-in div:first-child {
+        display: none;
+    }
+    .sign-in div:last-child {
+        display: block;
+        font-size: 90%;
+    }
+    .register-part div, a {
+        margin: 0 5px;
+        
+    }
+    .dropdown-menu-for-navigationBar:hover .dropdown-content-forPc {
+        display: none;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .dropdown-menu-for-navigationBar:hover .dropdown-content-forTablet {
+        display: block;
+    }
+    .disable {
+        display: none;
+    }
+    .trending-cities h2, .trending-country h2,
+    .flights-deal h2, .travel-inspiration h2,
+    .a-little-bit-more h2 {
+        width: 70%;
+    }
+    blockquote {
+        width: 50%;
+    }
+    .contact-information {
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 50px;
+    }
+    .travel-plan-box img {
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    html {
+        font-size: 18px;
+    }
+    .box-container-travel-inspiration {
+        grid-template-columns: 1fr;
+    }
+    .box-container-trending-cities {
+        grid-template-columns: 1fr;
+    }
+    .box-container-trending-country {
+        grid-template-columns: 1fr;
+    }
+    .dropdown-menu-for-navigationBar:hover .dropdown-content-forTablet {
+        display: none;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .dropdown-menu-for-navigationBar:hover .dropdown-content-forPhones {
+        display: block;
+    }
+    .disable-all {
+        display: none;
+    }
+    .contact-information {
+    }
+    .site-currency {
+        grid-column: 1/3;
+    }
+    .more-info {
+        grid-template-columns: 1fr;
+    }
+    .more-info p {
+        width: 80%;
+        margin: 0 auto;
+    }
+    header h1 {
+        line-height: 120%;
+        text-align: center;
+    }
+    .trending-cities h1, .trending-country h1,
+    .travel-inspiration h1, .flights-deal h1,
+    .how-to-find-cheap-flights h1, .a-little-bit-more h1 {
+        line-height: 120%;
+        font-size: 120%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    blockquote {
+        width: 80%;
+        font-size: 100%;
+    }
+    blockquote:before {
+        font-size: 400%;
+        left: -40px;
+    }
+    blockquote:after {
+        font-size: 400%;
+        right: -40px;
+    }
+    .navigation-items div {
+        margin-left: 10px;
+    }
+}
